@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("fast");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border: solid 1px grey;
+}
+
+#panel {
+  padding: 200px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click And Sean Bean Lives!</div>
+<div id="panel">
+  <h1>Click Above And Sean Bean Dies!</h1>
+    <img src="http://donthatethegeek.com/wp-content/uploads/2014/07/10517578_462961937181157_9069973090163711333_n.jpg" alt="Sean" width="500" height="333">
+</div>
+<p>If you have killed Sean Bean in your amateur animated feature, do not feel bad. You have something in common with one third of his directors.</p>
+</body>
+</html>
